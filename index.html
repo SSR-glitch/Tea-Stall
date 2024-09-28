@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea Stall Website HTML and CSS </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="images/">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="logo">JAGDAMBA CHAI EXPRESS<span>.</span></a>
+            <UL CLASS="menu-links">
+                <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+                <li><a href="#"><b>Home</b></a></li>
+                <li><a href="#products"><b>Products</b></a></li>
+                <li><a href="#about"><b>About Us</b></a></li>
+                <li><a href="#contact"><b>Contact Us</b></a></li>
+            </UL>
+            <span id="menu-btn" class="material-symbols-outlined">menu</span>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <div class="content">
+            <h1>"चहा आणि हसरे चेहरे, <br> जीवनाचे गोड फॉर्म."</h1>
+            <p>
+                <b>
+                A delightful selection of teas and snacks, each crafted with care and a touch of tradition.
+                We’re here to add warmth and flavor to your day. Come by and experience the perfect blend of comfort and taste!
+                </b><br>
+            </p>
+            <button onclick="document.getElementById('products').scrollIntoView({ behavior: 'smooth' });">Check Out</button>
+        </div>
+    </section>
+    <section id="products" class="products-section">
+        <h1>Our Menu</h1>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="images/tea.jpg" alt="Tea">
+                <h2>Masala Chai</h2>
+                <p>₹10 per cup</p>
+            </div>
+
+            <div class="product-item">
+                <img src="images/coffee.jpg" alt="Coffee">
+                <h2>Filter Coffee</h2>
+                <p>₹20 per cup</p>
+            </div>
+
+            <div class="product-item">
+                <img src="images/samosa.jpg" alt="Samosa">
+                <h2>Samosa</h2>
+                <p>₹15 per piece</p>
+            </div>
+
+            <div class="product-item">
+                <img src="images/special tea.jpg" alt="Samosa">
+                <h2>Special Tea</h2>
+                <p>₹20 per cup</p>
+            </div>
+
+            <div class="product-item">
+                <img src="images/green tea.png" alt="Samosa">
+                <h2>Green Tea</h2>
+                <p>₹15 per cup</p>
+            </div>
+
+            <div class="product-item">
+                <img src="images/black tea.jpg" alt="Samosa">
+                <h2>Black Tea</h2>
+                <p>₹15 per cup</p>
+            </div>
+
+            <div class="product-item">
+                <img src="images/cold coffee.jpg" alt="Samosa">
+                <h2>Cold Coffee</h2>
+                <p>₹30 per cup</p>
+            </div>
+
+            <div class="product-item">
+                <img src="images/ginger tea.jpg" alt="Samosa">
+                <h2>Ginger Tea</h2>
+                <p>₹20 per cup</p>
+            </div>
+
+            <div class="product-item">
+                <img src="images/sugarfree tea.jpg" alt="Samosa">
+                <h2>Sugar Free Tea</h2>
+                <p>₹15 per cup</p>
+            </div>
+
+            <div class="product-item">
+                <img src="images/lemon tea.webp" alt="Samosa">
+                <h2>Lemon Tea</h2>
+                <p>₹20 per cup</p>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="about-section">
+        <h1>About Us</h1>
+        <p>
+            Welcome to Jagdamba Chai Express, where every cup tells a story. What began as a small tea stall
+            near MES Abasaheb Garware College has blossomed into a beloved spot for tea lovers. With our
+            dedication to quality and tradition, we serve a variety of teas, coffees, and snacks that are 
+            sure to brighten your day.
+        </p>
+        <p>
+            We believe that the best conversations happen over a cup of chai, and we are here to make 
+            every sip special. Join us for a taste of our local favorites, made with love and care. 
+        </p>
+    </section>
+    <section id="contact" class="contact-section">
+        <h1>Contact Us</h1>
+        <p>If you have any questions or would like to reach out to us, feel free to contact us. We're always here to help!</p>
+    
+        <div class="contact-info">
+            <p><strong>Location:</strong> Near MES Abasaheb Garware College, Pune</p>
+            <p><strong>Phone:</strong> +91 12345 67890</p>
+            <p><strong>Email:</strong> jagdambachai@gmail.com</p>
+        </div>
+    
+        <form action="#" method="POST" class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>    
+    <script>
+        const header = document.querySelector("header");
+        const menuBtn = document.querySelector("#menu-btn");
+        const closeMenuBtn = document.querySelector("close-menu-btn");
+        menuBtn.addEventListener("click", () => {
+            header.classList.toggle("show-mobile-menu");
+        });
+        closeMenuBtn.addEventListener("click", () => {
+            menuBtn.click();
+        });
+    </script>
+</body>
+</html>

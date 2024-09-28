@@ -1,0 +1,309 @@
+
+@import url(images/home\ image.jpg);
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    height: 100vh;
+    background: url("images/sudhanshu-yadav-ni9SnKPgZtk-unsplash.jpg");
+    background-position:center;
+    background-size: cover;
+
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background:bisque;
+}
+
+header .navbar {
+    display: flex;
+    align-items:center;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.navbar .logo {
+    color: #000000bb;
+    font-size: 2.1rem;
+    font-weight: 600;
+}
+
+.navbar .logo span {
+    color: rgb(210, 105, 30);
+}
+
+.navbar .menu-links {
+    color:rgba(0, 0, 0, 0);
+    display: flex;
+    gap: 48px;
+    list-style: none;
+}
+
+.navbar a {
+    color:#000000bb;
+    text-decoration: none;
+    transition: 0.2s ease;
+    line-height: 1.5;
+}
+
+.navbar a:hover {
+    color: rgb(210, 105, 30);
+}
+
+.hero-section {
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    padding: 80px 20px 0;
+    margin-top: 80px;
+}
+
+.hero-section .content {
+    color: #ffffff;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.hero-section .content h1 {
+    color: blanchedalmond;
+    font-size: 3rem;
+    max-width: 600px;
+}
+
+.hero-section .content p {
+    color:blanchedalmond;
+    font-weight: 300;
+    margin-top: 15px;
+    max-width: 600px;
+}
+
+.hero-section .content button {
+    background: #fff;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 38px;
+    padding: 12px 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.hero-section .content button:hover {
+    color: #fff;
+    background: #c06b3e;
+}
+
+.products-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #ffffff;
+    padding-top: 80px;
+}
+
+.products-section h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.product-item h2 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+
+.product-item p {
+    font-size: 1.2rem;
+    color: #c06b3e;
+}
+
+.about-section {
+    padding: 50px 20px;
+    background: url(images/tim-mossholder-07uiqD9LS6U-unsplash.jpg);
+    text-align: center;
+}
+
+.about-section h1 {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 1.2rem;
+    color: white;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.about-section p:last-child {
+    margin-bottom: 0;
+}
+
+.contact-section {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact-section h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    color: #555;
+    margin: 10px 0;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    padding: 15px 30px;
+    background-color: #c06b3e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #a45a2e;
+}
+
+#about, #products, #contact {
+    scroll-margin-top: 50px;
+}
+
+#menu-btn {
+    display: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+#close-menu-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+    header{
+        padding: 10px 20px;
+    }
+    header.show-mobile-menu::before{
+        content: "";
+        position: fixed;
+        left: 0;
+        top:0 ;
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(5px);
+    }
+    #close-menu-btn, #menu-btn {
+        display: block;
+    }
+    .navbar .menu-links {
+        position: fixed;
+        left: -260px;
+        top: 0;
+        flex-direction: column;
+        width: 260px;
+        height: 100vh;
+        background: #fff;
+        padding: 70px 40px 0;
+        transition: left 0.15s ease;
+    }
+
+    header.show-mobile-menu .navbar ,.menu-links {
+        left:0;
+    }
+
+    .navbar a {
+        color: #000;
+    }
+
+    .hero-section .content {
+        text-align: center;
+    }
+
+    .hero-section .content :is(h1,p) {
+        max-width: 100%;
+    }
+
+    .hero-section .content h1 {
+        font-size: 2.3rem;
+        line-height: 60px;
+    }
+
+    .hero-section .content button {
+        padding: 9px 18px;
+    }
+}
