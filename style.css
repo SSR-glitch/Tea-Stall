@@ -23,6 +23,12 @@ body {
 
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
 header {
     position: fixed;
     top: 0;
@@ -69,31 +75,39 @@ header .navbar {
 }
 
 .hero-section {
-    height: calc(100vh - 80px);
+    height: 100vh; 
     display: flex;
-    align-items: center;
-    padding: 80px 20px 0;
-    margin-top: 80px;
+    justify-content: center; 
+    align-items: flex-start; 
+    padding-top: 17vh; 
+    margin: 0;
+    background: url("images/sudhanshu-yadav-ni9SnKPgZtk-unsplash.jpg") no-repeat center center;
+    background-size: cover;
+    box-sizing: border-box;
 }
 
 .hero-section .content {
     color: #ffffff;
     max-width: 1200px;
     width: 100%;
-    margin: 0 auto;
+    text-align: center;
 }
 
 .hero-section .content h1 {
     color: blanchedalmond;
     font-size: 3rem;
     max-width: 600px;
+    margin: 0 auto;
+    margin-left: 22%;
 }
 
 .hero-section .content p {
-    color:blanchedalmond;
+    color: blanchedalmond;
     font-weight: 300;
     margin-top: 15px;
     max-width: 600px;
+    margin: 0 auto;
+    margin-left: 22%;
 }
 
 .hero-section .content button {
@@ -102,7 +116,8 @@ header .navbar {
     border: none;
     font-size: 1rem;
     font-weight: 500;
-    margin-top: 38px;
+    margin-top: 12px;
+    margin-left: -60px;
     padding: 12px 30px;
     border-radius: 6px;
     cursor: pointer;
@@ -161,19 +176,19 @@ header .navbar {
 
 .about-section {
     padding: 50px 20px;
-    background: url(images/tim-mossholder-07uiqD9LS6U-unsplash.jpg);
+    background-color: cornsilk;
     text-align: center;
 }
 
 .about-section h1 {
     font-size: 2.5rem;
-    color: white;
+    color: black;
     margin-bottom: 20px;
 }
 
 .about-section p {
     font-size: 1.2rem;
-    color: white;
+    color: #555;
     line-height: 1.8;
     max-width: 800px;
     margin: 0 auto;
@@ -305,12 +320,21 @@ header .navbar {
         max-width: 100%;
     }
 
+  .hero-section .content h1, .hero-section .content p {
+        margin-left: 0;
+        text-align: center;
+    }
+
     .hero-section .content h1 {
-        font-size: 2.3rem;
-        line-height: 60px;
+        font-size: 2rem;
+    }
+
+    .hero-section .content p {
+        font-size: 1rem; 
     }
 
     .hero-section .content button {
-        padding: 9px 18px;
+        margin-left: 0;
+        font-size: 0.9rem;
     }
 }
